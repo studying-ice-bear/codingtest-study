@@ -1,3 +1,4 @@
+// 팩토리얼
 const readline = require("readline");
 
 const factorial = (n) => {
