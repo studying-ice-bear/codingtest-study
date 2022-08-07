@@ -1,3 +1,4 @@
+# 브루트 포스
 import sys
 
 input = sys.stdin.readline

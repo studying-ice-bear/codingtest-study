@@ -1,3 +1,4 @@
+# 브루트 포스
 from itertools import combinations as cb
 import sys
 
