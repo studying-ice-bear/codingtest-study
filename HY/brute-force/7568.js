@@ -1,5 +1,8 @@
 const fs = require("fs");
 
+const filePath =
+  process.platform === "linux" ? "/dev/stdin" : "brute-force/input.txt";
+
 let input = fs
   .readFileSync("brute-force/input.txt")
   .toString()
