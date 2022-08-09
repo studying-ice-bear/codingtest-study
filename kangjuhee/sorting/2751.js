@@ -12,13 +12,16 @@
 // ---------------------------------------------------------------------------------------------------------------------
 
 // 시간 단축 코드
-const fs = require("fs");
-let input = fs.readFileSync("../input.txt").toString().trim().split("\n");
+let input = require("fs")
+  .readFileSync("../input.txt")
+  .toString()
+  .trim()
+  .split("\n");
 let result = "";
 input.shift();
+input = input.map((i) => Number(i.trim()));
 input = input.sort((a, b) => a - b);
 input.forEach((el) => {
   result += `${el}\n`;
 });
-
 console.log(result.trimEnd());
