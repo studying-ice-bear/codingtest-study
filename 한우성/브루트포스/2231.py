@@ -1,5 +1,3 @@
-n = int(input())
-
 
 def solve(n):
     for i in range(1, n+1, 1):
@@ -9,4 +7,4 @@ def solve(n):
     else:
         return 0        
 
-print(solve(n))
+print(solve(5))
