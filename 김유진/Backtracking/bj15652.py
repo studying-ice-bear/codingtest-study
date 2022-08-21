@@ -10,16 +10,13 @@ import sys
 N, M = map(int, sys.stdin.readline().split())
 
 arr = []
-def bt():
+def bt(start):
     if len(arr) == M:
-        for i in range(len(arr)-1):
-            if arr[i] > arr[i+1]:
-                return
         print(' '.join(map(str, arr)))
         return
-    for n in range(1, N+1):
+    for n in range(start, N+1):
         arr.append(n)
-        bt()
+        bt(n)
         arr.pop()
 
-bt()
+bt(1)
