@@ -1,16 +1,11 @@
 import sys
 numTestCases = int(sys.stdin.readline())
-print(numTestCases)
-arr = [0] * 1001
+arr = [0] * 10001
 
 for _ in range(numTestCases):
-    num = int(input())
-    # if num not in arr:
+    arr[int(sys.stdin.readline())] += 1
 
-for i in range(numTestCases, 0, -1):
-    for j in range(i-1):
-        if arr[j] > arr[j+1]:
-            arr[j], arr[j+1] = arr[j+1], arr[j]
-
-for i in range(numTestCases):
-    print(arr[i])
+for i in range(10001):
+    if arr[i] != 0:
+        for j in range(arr[i]):
+            print(i)
