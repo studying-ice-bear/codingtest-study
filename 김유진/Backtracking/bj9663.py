@@ -1,9 +1,32 @@
 '''
     N-Queen 문제는 크기가 N × N인 체스판 위에 퀸 N개를 서로 공격할 수 없게 놓는 문제이다.
 '''
+
 import sys
 N = int(sys.stdin.readline())
 
+ans = 0
+row = [0] * N
+
+def is_promising(x):
+    for i in range(x):
+        if row[x] == row[i] or abs(row[x]-row[i]) == abs(x-i):
+            return False
+    return True
+
+def n_queens(x):
+    global ans
+    if x == N:
+        ans += 1
+        return
+    else:
+        for i in range(N):
+            row[x] = i
+            if is_promising(x):
+                n_queens(x+1)
+n_queens(0)
+print(ans)
+'''
 def left(m, cnt):
     if m-1 < 0:
         return cnt
@@ -53,12 +76,7 @@ arr = [[0 for i in range(N)] for j in range(N)]
 # arr = [0 for i in range(N)]
 print(arr)
 
-'''
-[0, 2, 3, 1]
-1행 2열
-2행 3열
-3행 1열
-'''
+
 count = 0
 result = 0
 for i in range(N):
@@ -81,3 +99,4 @@ print(result)
 # print((N*N-1)*(N*N))
 # print(count)
 # print((N*N-1)*(N*N)-count)
+'''
