@@ -1,4 +1,5 @@
 """
+- 해시
 문제 > https://school.programmers.co.kr/learn/courses/30/lessons/42579?language=python3
 규칙 >
 속한 노래가 많이 재생된 장르를 먼저 수록
