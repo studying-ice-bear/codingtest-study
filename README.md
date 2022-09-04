@@ -69,5 +69,18 @@
 ### 0829
 
 - 카테고리: [누적합](https://www.acmicpc.net/step/48), [그리디 알고리즘](https://www.acmicpc.net/step/33)
-- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)
+  - 의논한 문제
+    - [나머지 합](https://www.acmicpc.net/problem/10986)
+      - 힌트: 누적 합의 나머지를 구하고 그 값이 같은 것끼리 그룹을 형성한다. 각 그룹에서 2개를 고르면(조합) 범위가 형성된다. 나머지가 같기 때문에 두 값의 차가 0이라서, 최종적으로 누적합을 M으로 나누면 0이 된다.
+- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)의 [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
+  - 모두 [heapq](https://docs.python.org/ko/3/library/heapq.html) 사용해서 문제를 풀었다.
+  - 우성님이 소개해 준 함수
+    - [all(iterable)](https://docs.python.org/ko/3/library/functions.html?highlight=all#all): iterable 요소가 모두 참이면 True 반환
+    - [any(iterable)](https://docs.python.org/ko/3/library/functions.html?highlight=all#any): iterable 요소가 하나라도 참이면 True 반환
 
+
+### 0905
+
+- 카테고리: [스택](https://www.acmicpc.net/step/11), [큐, 덱](https://www.acmicpc.net/step/12)
+  - 의논한 문제
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)

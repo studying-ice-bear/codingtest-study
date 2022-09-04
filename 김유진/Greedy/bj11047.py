@@ -5,4 +5,10 @@ for i in range(N):
     arr[i] = int(sys.stdin.readline())
 
 arr = sorted(arr, reverse=True)
-print(arr)
+count = 0
+
+for i in range(N):
+    count += K // arr[i]
+    K = K % arr[i]
+
+print(count)
