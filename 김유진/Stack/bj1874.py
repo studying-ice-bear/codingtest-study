@@ -7,27 +7,50 @@ for i in range(N):
 stack = []
 j = 0
 i = 0
-result = []
+result = ""
 
 while True:
-    print(i, stack, arr[j])
-    if result:
-        if result[-1] < i:
-            print("NO")
+    if not stack:
+        for k in range(1, arr[i]+1):
+            stack.append(k)
+            result += "+\n"
+        j = arr[i]
+
+    else:
+        if i >= len(arr):
             break
 
-    if i < arr[j]:
-        if result[-1] < i:
-            print("NO")
+        if j < arr[i]: # j < arr[i]
+            for k in range(j+1, arr[i] + 1):
+                stack.append(k)
+                result += "+\n"
+
+            if j < arr[i]:
+                j = arr[i]
+
+        check = True
+        num = len(stack)
+        while num:
+            num -= 1
+            result += "-\n"
+            n = stack.pop()
+            print(stack, arr[i])
+            if arr[i] == n:
+                i += 1
+                check = False
+                break
+
+        if not stack and j == len(arr):
             break
-        for k in range(i+1, arr[j]+1):
-            print("+")
-            stack.append(k)
-        print(stack)
-        result.append(stack.pop())
-        print("-")
-        i = arr[j]
-    else:
-        stack.pop()
-        print("-")
-    j += 1
+
+        if check:
+            result = "NO"
+            break
+
+print(result)
+
+
+
+
+
+
