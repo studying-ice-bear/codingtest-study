@@ -66,8 +66,12 @@ n = int(input())
 arr = [list(map(int, list(input().rstrip()))) for _ in range(n)]
 
 def dnc(r, c, k):
-    
     flag = arr[r][c]
+    
+    if k == 1:
+        print(flag, end="")
+        return
+
     for i in range(r, r + k):
         for j in range(c, c + k):
             if arr[i][j] != flag:
