@@ -1,3 +1,17 @@
+'''
+8
+11110000
+11110000
+00011100
+00011100
+11110000
+11110000
+11110011
+11110011
+
+answer:
+((110(0101))(0010)1(0001))
+'''
 import sys
 N = int(sys.stdin.readline())
 video = [sys.stdin.readline() for _ in range(N)]
