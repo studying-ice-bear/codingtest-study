@@ -83,4 +83,26 @@
 
 - 카테고리: [스택](https://www.acmicpc.net/step/11), [큐, 덱](https://www.acmicpc.net/step/12)
   - 의논한 문제
-- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)
+    - [스택 수열](https://www.acmicpc.net/problem/1874)
+    - [오큰수](https://www.acmicpc.net/problem/17298)
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)의 [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
+
+
+#### 0912 
+
+- 추석연휴로 쉬어가기
+
+
+### 0919
+
+- 카테고리: [분할정복](https://www.acmicpc.net/step/20), [이분탐색](https://www.acmicpc.net/step/29)
+  - 의논한 문제
+    - [랜선 자르기](https://www.acmicpc.net/problem/1654): 각 랜선을 특정 개수로 똑같이 자를 때 최대 길이 구하기
+    - [행렬제곱](https://www.acmicpc.net/problem/10830)
+      - 4시간을 투자한 혜선님의 조언: 나머지를 구하는 문제인데 시간초과를 만났다면 ⭐ 모듈러 연산 ⭐ 사용하기
+        1. (a + b) mod n = ((a mod n) + (b mod n)) mod n
+        2. (a - b) mod n = ((a mod n) - (b mod n)) mod n
+        3. (a * b) mod n = ((a mod n) * (b mod n)) mod n
+      - [곱셈](https://www.acmicpc.net/problem/1629)이랑 유사하다.
+- 랜덤문제: [완전탐색](https://school.programmers.co.kr/learn/courses/30/parts/12230)의 [모음사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512)
+

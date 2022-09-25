@@ -12,6 +12,7 @@ for i in range(N):
             result[i][j] += matrix1[i][k] * matrix2[k][j]
         print(result[i][j], end=' ')
     print()
+
 '''
 2 2
 1 0
