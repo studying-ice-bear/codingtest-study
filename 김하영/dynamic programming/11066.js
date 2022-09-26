@@ -48,7 +48,6 @@ const solution = (T, input) => {
     }
     answer += dp[0][K - 1] + "\n";
   }
-  console.log(answer);
 
   return answer;
 };
