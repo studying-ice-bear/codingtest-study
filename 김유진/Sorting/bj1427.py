@@ -12,7 +12,8 @@ for i in range(len_num):
     arr.append(n)
 
 arr = sorted(arr, reverse=True)
-print(' '.join(str(a) for a in arr))
+# print(' '.join(str(a) for a in arr))
+print(*arr, sep='')
 
 
 '''
