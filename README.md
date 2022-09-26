@@ -106,3 +106,8 @@
       - [곱셈](https://www.acmicpc.net/problem/1629)이랑 유사하다.
 - 랜덤문제: [완전탐색](https://school.programmers.co.kr/learn/courses/30/parts/12230)의 [모음사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512)
 
+### 0926
+
+- 카테고리: [우선순위 큐](https://www.acmicpc.net/step/13), [동적계획법2](https://www.acmicpc.net/step/17)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860)
+  - 아무도 못 풀었다🥲. 알파벳보다는 이동횟수 계산이 이 문제의 핵심인것 같다.
