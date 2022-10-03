@@ -111,3 +111,9 @@
 - 카테고리: [우선순위 큐](https://www.acmicpc.net/step/13), [동적계획법2](https://www.acmicpc.net/step/17)
 - 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860)
   - 아무도 못 풀었다🥲. 알파벳보다는 이동횟수 계산이 이 문제의 핵심인것 같다.
+ 
+### 1003
+
+- 카테고리: [동적계획법1](https://www.acmicpc.net/step/16), [동적계획법2](https://www.acmicpc.net/step/17)
+- 랜덤문제: [동적계획법](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [사칙연산](https://school.programmers.co.kr/learn/courses/30/lessons/1843) 
+  - 아무도 못 풀었다🥲. 다음주 스터디 시간까지 풀거나 공부해서 설명하기로 함.
