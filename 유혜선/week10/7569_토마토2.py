@@ -3,7 +3,8 @@
 
 idea> 토마토 3차원 버전
 - bfs 이용
-- 위 아래 오른쪽 왼쪽 앞 뒤 가 가능한지 체크
+- 위 아래 오른쪽 왼쪽 앞 뒤 가 가능한지 체크 (check)
+- bfs로 탐색
 
 """
 import sys
@@ -58,8 +59,8 @@ def solution():
             if 0 in tomatoes[hh][nn]:
                 return -1
             max_day = max(max_day, max(days[hh][nn]))
-    print(tomatoes)
-    print(days)
+    # print(tomatoes)
+    # print(days)
     return max_day
 
 print(solution())
