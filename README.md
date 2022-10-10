@@ -117,3 +117,27 @@
 - 카테고리: [동적계획법1](https://www.acmicpc.net/step/16), [동적계획법2](https://www.acmicpc.net/step/17)
 - 랜덤문제: [동적계획법](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [사칙연산](https://school.programmers.co.kr/learn/courses/30/lessons/1843) 
   - 아무도 못 풀었다🥲. 다음주 스터디 시간까지 풀거나 공부해서 설명하기로 함.
+  
+### 1010
+
+- 지난 주에 못푼 문제 사칙연산 풀이방법 의논
+  - [1안: 2차원 배열에서 해결](https://school.programmers.co.kr/questions/35224)
+  - [2안: 1차원 배열에서 해결](https://tiktaek.tistory.com/33)
+- 카테고리: [그래프와 순회](https://www.acmicpc.net/step/24)
+  - [뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)
+  - JS로 문제 풀 때 자료구조 Map을 사용해서 풀었음
+    - [JS에서 Set, Map, Object 차이](https://velog.io/@proshy/JSSet-Map-Object-%EC%A0%95%EB%A6%AC)
+  - 파이썬으로 dfs 문제 풀 때, 재귀호출 제한을 따로 설정해야 했음. (Python3 기준으로 최대 재귀 깊이는 1000)
+    ```python
+    import sys
+
+    sys.setrecursionlimit(10 ** 9)
+    ```
+  - dfs 문제 풀 때, 재귀 또는 스택으로 푸는 방법이 있음
+- 랜덤문제: [깊이/너비 우선탐색(DFS/BFS)](https://school.programmers.co.kr/learn/courses/30/parts/12421)의 [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) 
+  - 다른 팀원이 시도한 방식을 듣고 혜선님이 [유니온 파인드 알고리즘](https://ip99202.github.io/posts/%EC%9C%A0%EB%8B%88%EC%98%A8-%ED%8C%8C%EC%9D%B8%EB%93%9C(Union-Find)/)을 떠올렸음
+
+### 1017
+
+- 카테고리: [최단경로](https://www.acmicpc.net/step/26)
+- 랜덤문제: [이분탐색](https://school.programmers.co.kr/learn/courses/30/parts/12486)의 [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
