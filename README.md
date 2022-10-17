@@ -140,4 +140,11 @@
 ### 1017
 
 - 카테고리: [최단경로](https://www.acmicpc.net/step/26)
+  - 혜선님의 최단경로 풀이법: dfs, bfs 처럼 코드에 틀이 있어서, 다익스트라를 공부하면 문제를 풀 수 있습니다!    ~~노스트라다무스~~
 - 랜덤문제: [이분탐색](https://school.programmers.co.kr/learn/courses/30/parts/12486)의 [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
+  - 주어진 시간 동안 모든 심사관은 총 몇 명을 심사할 수 있는가를 확인하면서 시간 범위를 줄여나가는 것이 포인트. 
+  
+### 1024
+
+- 카테고리: [투포인터](https://www.acmicpc.net/step/59) + [최단경로](https://www.acmicpc.net/step/26)
+- 랜덤문제: [그래프](https://school.programmers.co.kr/learn/courses/30/parts/14393)의 [방의개수](https://school.programmers.co.kr/learn/courses/30/lessons/49190)
