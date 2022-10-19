@@ -106,3 +106,45 @@
       - [곱셈](https://www.acmicpc.net/problem/1629)이랑 유사하다.
 - 랜덤문제: [완전탐색](https://school.programmers.co.kr/learn/courses/30/parts/12230)의 [모음사전](https://school.programmers.co.kr/learn/courses/30/lessons/84512)
 
+### 0926
+
+- 카테고리: [우선순위 큐](https://www.acmicpc.net/step/13), [동적계획법2](https://www.acmicpc.net/step/17)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860)
+  - 아무도 못 풀었다🥲. 알파벳보다는 이동횟수 계산이 이 문제의 핵심인것 같다.
+ 
+### 1003
+
+- 카테고리: [동적계획법1](https://www.acmicpc.net/step/16), [동적계획법2](https://www.acmicpc.net/step/17)
+- 랜덤문제: [동적계획법](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [사칙연산](https://school.programmers.co.kr/learn/courses/30/lessons/1843) 
+  - 아무도 못 풀었다🥲. 다음주 스터디 시간까지 풀거나 공부해서 설명하기로 함.
+  
+### 1010
+
+- 지난 주에 못푼 문제 사칙연산 풀이방법 의논
+  - [1안: 2차원 배열에서 해결](https://school.programmers.co.kr/questions/35224)
+  - [2안: 1차원 배열에서 해결](https://tiktaek.tistory.com/33)
+- 카테고리: [그래프와 순회](https://www.acmicpc.net/step/24)
+  - [뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)
+  - JS로 문제 풀 때 자료구조 Map을 사용해서 풀었음
+    - [JS에서 Set, Map, Object 차이](https://velog.io/@proshy/JSSet-Map-Object-%EC%A0%95%EB%A6%AC)
+  - 파이썬으로 dfs 문제 풀 때, 재귀호출 제한을 따로 설정해야 했음. (Python3 기준으로 최대 재귀 깊이는 1000)
+    ```python
+    import sys
+
+    sys.setrecursionlimit(10 ** 9)
+    ```
+  - dfs 문제 풀 때, 재귀 또는 스택으로 푸는 방법이 있음
+- 랜덤문제: [깊이/너비 우선탐색(DFS/BFS)](https://school.programmers.co.kr/learn/courses/30/parts/12421)의 [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) 
+  - 다른 팀원이 시도한 방식을 듣고 혜선님이 [유니온 파인드 알고리즘](https://ip99202.github.io/posts/%EC%9C%A0%EB%8B%88%EC%98%A8-%ED%8C%8C%EC%9D%B8%EB%93%9C(Union-Find)/)을 떠올렸음
+
+### 1017
+
+- 카테고리: [최단경로](https://www.acmicpc.net/step/26)
+  - 혜선님의 최단경로 풀이법: dfs, bfs 처럼 코드에 틀이 있어서, 다익스트라를 공부하면 문제를 풀 수 있습니다!    ~~노스트라다무스~~
+- 랜덤문제: [이분탐색](https://school.programmers.co.kr/learn/courses/30/parts/12486)의 [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
+  - 주어진 시간 동안 모든 심사관은 총 몇 명을 심사할 수 있는가를 확인하면서 시간 범위를 줄여나가는 것이 포인트. 
+  
+### 1024
+
+- 카테고리: [투포인터](https://www.acmicpc.net/step/59) + [최단경로](https://www.acmicpc.net/step/26)
+- 랜덤문제: [그래프](https://school.programmers.co.kr/learn/courses/30/parts/14393)의 [방의개수](https://school.programmers.co.kr/learn/courses/30/lessons/49190)
