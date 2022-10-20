@@ -2,7 +2,6 @@ const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
 
 const babbling = fs.readFileSync(filePath).toString().trim().split("\n");
-console.log(babbling);
 
 function solution(babbling) {
   let answer = 0;
