@@ -36,5 +36,5 @@ function solution(board) {
     return acc + cur.reduce((acc, cur) => acc + cur, 0);
   }, 0);
 
-  return board.length * board.length - answer;
+  return answer;
 }
