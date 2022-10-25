@@ -147,4 +147,15 @@
 ### 1024
 
 - 카테고리: [투포인터](https://www.acmicpc.net/step/59) + [최단경로](https://www.acmicpc.net/step/26)
+  - 투포인터의 [냅색문제](https://www.acmicpc.net/problem/1450)에서 비트 시프트 연산자 ([왼쪽 시프트](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift), [오른쪽 시프트](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift))
+  - 한 범위가 2개로 나뉘어 져서 각각의 부분합을 구함
 - 랜덤문제: [그래프](https://school.programmers.co.kr/learn/courses/30/parts/14393)의 [방의개수](https://school.programmers.co.kr/learn/courses/30/lessons/49190)
+  - 레벨5의 고난이도 문제 
+    - ![Screen Shot 2022-10-24 at 9 39 43 PM](https://user-images.githubusercontent.com/40953167/197527473-70fca604-768d-4cb9-87a1-30d8d90cbcfa.png)
+~~풀었으면 반4자2를 얻을 수 있었던 문제..~~
+  - 모래시계 같은 도형도 확인하기 위해서 ```dx,dy = [0,1,1,1,0,-1,-1,-1],[1,1,0,-1,-1,-1,0,1]```를 두번씩 더한다. 1x1를 2x2라고 생각하면 된다.
+
+### 1031
+
+- 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+- 랜덤문제: [해시](https://school.programmers.co.kr/learn/courses/30/parts/12077)
