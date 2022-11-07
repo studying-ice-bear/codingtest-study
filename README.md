@@ -158,4 +158,18 @@
 ### 1031
 
 - 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
-- 랜덤문제: [해시](https://school.programmers.co.kr/learn/courses/30/parts/12077)
+  - 취업준비로 인해 문제를 많이 풀어오지 않아서 앞으로 진행방식을 변경함. 
+    > 각자 맡은 문제를 설명하고 다른 방식으로 푼 팀원이 첨언하기.
+  - 다음 주에 설명할 문제
+    - LCS 2 ➡️ 혜선 / 숨바꼭질 4 ➡️ 유진 / DSLR ➡️ 하영 / 최소비용 구하기 2 ➡️ 혜진 / 플로이드 2 ➡️ 보선
+- 랜덤문제: [해시](https://school.programmers.co.kr/learn/courses/30/parts/12077)의 [위장](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
+  - 대부분 수학의 조합 방식으로 풀었다
+  - 보선님이 알려준 꿀팁: Javascript의 Map을 iterable하게 접근하는 방법은 [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)를 사용하는 것이다.
+  - 혜선님이 알려준 꿀팁: 기본값을 생성해주는 딕셔너리 자료형 ```from collections import defaultdict```
+    - 관련 글 갈무리 ([출처: daleseo.com](https://www.daleseo.com/python-collections-defaultdict/#%EB%8D%94-%EB%82%98%EC%9D%80-%EB%B0%A9%EB%B2%95-collectionsdefaultdict))
+      > 파이썬의 내장 모듈인 collections의 defaultdict 클래스는 이러한 경우 사용하면 딱 인데요. defaultdict 클래스의 생성자로 기본값을 생성해주는 함수를 넘기면, 모든 키에 대해서 값이 없는 경우 자동으로 생성자의 인자로 넘어온 함수를 호출하여 그 결과값으로 설정해줍니다. 
+
+### 1107
+
+- 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+- 랜던문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)
