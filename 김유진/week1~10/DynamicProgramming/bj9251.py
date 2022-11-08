@@ -37,5 +37,5 @@ output:
 
 ACA
 CAPCAK
-X
+
 '''
