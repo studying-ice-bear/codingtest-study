@@ -2,10 +2,10 @@
 
 ## 목표
 
-- 매주 2개의 카테고리([백준 단계별로 풀기](https://www.acmicpc.net/step)) 안에서 문제 5개씩 풀기
+- 매주 2개의 카테고리([바킹독 공개문제집 (221114 변경)](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog) ~~[백준 단계별로 풀기(220808 - 221114)](https://www.acmicpc.net/step)~~) 안에서 문제 최소 5개씩 풀기
 - 매주 월요일 8시에 스터디 모임
-  1. 코드 공유 (약 30분)
-     - 모든 문제를 최대한 공유하도록 하되, 카테고리에 속한 문제가 지나치게 많은 경우 어려웠던 문제를 선정해서 공유함.
+  1. 코드 공유 (약 1시간)
+     - 무조건 1문제를 설명한다. 설명할 문제가 겹쳐도 무관하다.
   2. 랜덤으로 고른 문제 1개를 다같이 풀고, 푼 방법 공유 (약 30분)
      - [프로그래머스 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)에서 랜덤으로 결정함.
 
@@ -208,3 +208,12 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
   - 주먹구구 방식 대신에, 첫번째 프로그래스가 완료되려면 며칠이 지나야하는지 계산하면 더 빠르다.
   - 모든 프로그레스가 필요한 날짜를 계산하여 처리하는 방법도 있다.
 
+### 계획 변경
+
+- 코테에 자주 나오는 문제를 집중적으로 풀기 위해서 문제집 변경
+  - [바킹독 공개문제집](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog)
+
+### 1121
+
+- 카테고리: [BFS](https://www.acmicpc.net/workbook/view/7313)
+- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)
