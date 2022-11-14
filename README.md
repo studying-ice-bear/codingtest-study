@@ -172,4 +172,24 @@
 ### 1107
 
 - 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
-- 랜던문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)
+  - LCS2
+    - 2차원 배열에서 문자가 같으면 이전 값과 1을 더해서 저장한다. (가장자리에도 같은 방식으로 값을 넣기 위해서 패딩 값을 넣어준다.)
+    - 2차원 배열을 이용해서 역추적을 하여 부분 문자열을 출력한다. 
+    - [LCS 참고 블로그](
+https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-LCS-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Longest-Common-Substring%EC%99%80-Longest-Common-Subsequence)
+  - 숨바꼭질4
+    - bfs로 -1, 1, *2 인 상황을 모두 접근한다 (위치값을 같이 저장한다)
+  - DSLR
+    - 프로그래머스 조이스틱과 유사한 문제
+    - 방문 사실을 저장하면서 전체를 다 훑어본다.
+  - 최소비용 구하기 2
+    - [다익스트라](https://m.blog.naver.com/ndb796/221234424646) 이용
+      - 힙을 사용하면 시간복잡도가 작아진다.
+  - 플로이드 2
+    - 플로이드 워셜 알고리즘 이용 ([알고리즘 참고 블로그](https://m.blog.naver.com/PostView.naver?blogId=ndb796&logNo=221234427842))
+    - [문제 설명 때 참고한 그림](https://velog.io/@diddnjs02/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%B0%B1%EC%A4%80-%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C11404%EB%B2%88)
+    
+### 1114
+
+- 카테고리: [트리](https://www.acmicpc.net/step/23)
+- 랜덤문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)
