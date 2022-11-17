@@ -1,4 +1,3 @@
-// 프로그래머스 조이스틱
 const fs = require("fs");
 
 const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
