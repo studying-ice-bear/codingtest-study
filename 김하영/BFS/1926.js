@@ -45,12 +45,11 @@ const solution = () => {
       }
     }
   }
-  paintingSize.sort((a, b) => b - a);
   if (paintingCount === 0) {
     paintingSize = [0];
   }
 
-  return `${paintingCount}\n${paintingSize[0]}`;
+  return `${paintingCount}\n${Math.max(...paintingSize)}`;
 };
 
 console.log(solution());
