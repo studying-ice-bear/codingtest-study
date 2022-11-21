@@ -64,10 +64,10 @@ function BFS(graph, queue) {
   let day = 0;
 
   while (queue.length) {
-    let [i, j, cnt] = queue.dequeue();
+    let [col, row, cnt] = queue.dequeue();
     for (let k = 0; k < 4; k++) {
-      let mx = i + dx[k];
-      let my = j + dy[k];
+      let mx = col + dx[k];
+      let my = row + dy[k];
       if (isRange(mx, my) && graph[mx][my] === 0) {
         graph[mx][my] = 1;
         queue.enqueue([mx, my, cnt + 1]);
@@ -90,10 +90,10 @@ function BFS(graph, queue) {
 function solution() {
   let answer = 0;
   const queue = new Queue();
-  map.forEach((_, i) => {
-    map[i].forEach((_, j) => {
-      if (map[i][j] === 1) {
-        queue.enqueue([i, j, 0]);
+  map.forEach((_, col) => {
+    map[col].forEach((_, row) => {
+      if (map[col][row] === 1) {
+        queue.enqueue([col, row, 0]);
       }
     });
   });
