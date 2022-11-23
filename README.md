@@ -216,4 +216,9 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1121
 
 - 카테고리: [BFS](https://www.acmicpc.net/workbook/view/7313)
-- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)
+- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)의 [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+
+### 1128
+
+- 카테고리: [DP](https://www.acmicpc.net/workbook/view/7319)
+- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)
