@@ -7,12 +7,14 @@ const input = fs.readFileSync(filePath).toString().trim().split("\n");
 input.shift();
 const answer = [];
 const solution = (start, end) => {
+  // bfs
   const visited = Array.from({ length: 10000 }, () => false);
   visited[start] = true;
   const queue = [[start, ""]];
 
   while (queue.length) {
     let [cur, path] = queue.shift();
+    // 종료 조건
     if (cur === end) {
       answer.push(path);
       return;

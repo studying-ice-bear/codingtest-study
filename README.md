@@ -2,10 +2,10 @@
 
 ## 목표
 
-- 매주 2개의 카테고리([백준 단계별로 풀기](https://www.acmicpc.net/step)) 안에서 문제 5개씩 풀기
+- 매주 2개의 카테고리([바킹독 공개문제집 (221114 변경)](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog) ~~[백준 단계별로 풀기(220808 - 221114)](https://www.acmicpc.net/step)~~) 안에서 문제 최소 5개씩 풀기
 - 매주 월요일 8시에 스터디 모임
-  1. 코드 공유 (약 30분)
-     - 모든 문제를 최대한 공유하도록 하되, 카테고리에 속한 문제가 지나치게 많은 경우 어려웠던 문제를 선정해서 공유함.
+  1. 코드 공유 (약 1시간)
+     - 무조건 1문제를 설명한다. 설명할 문제가 겹쳐도 무관하다.
   2. 랜덤으로 고른 문제 1개를 다같이 풀고, 푼 방법 공유 (약 30분)
      - [프로그래머스 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)에서 랜덤으로 결정함.
 
@@ -192,4 +192,33 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1114
 
 - 카테고리: [트리](https://www.acmicpc.net/step/23)
-- 랜덤문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)
+  - 트리의 부모 찾기(11725)
+  - 트리의 지름(1967)
+    - 첫 노드에서 가장 멀리 떨어져있는 노드를 찾고, 그 노드에서 가장 멀리 떨어져 있는 노드의 거리를 찾으면 그게 트리의 지름이다.
+    - 증명이 어려워서 완벽히 이해하지 못했다.
+  - 트리 순회(1991)
+    - 재귀를 이용하여 전위순회, 중위순회, 후위순회
+  - 트리의 순회(2263)
+    - 후위순회의 마지막이 항상 루트 노드이고, 중위순회는 루트노드를 중심으로 왼쪽자식트리와 오른쪽자식트리를 구분지을 수 있다. 이때, 자식트리들의 개수를 알아내서 후위순회에서도 왼쪽자식트리의 범위를 구하고 오른쪽자식트리의 범위를 구한다. 각 자식트리의 루트를 구해서 중위순회에서 자식의 자식트리를 구한다. (반복)
+  - 이진 검색 트리(5639)
+    - 부모노드를 기점으로 왼쪽자식은 부모노드보다 작고, 오른쪽자식은 부모노드보다 크다는 특징을 유념하고 전위순회로 트리를 파악하여 후위순회 결과를 구한다.
+  - 트리(4803)
+    - 그래프의 모든 노드를 확인하여 트리가 만들어지는지(사이클이 없는지) 확인한다.
+- 랜덤문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)의 [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+  - 주먹구구 방식 대신에, 첫번째 프로그래스가 완료되려면 며칠이 지나야하는지 계산하면 더 빠르다.
+  - 모든 프로그레스가 필요한 날짜를 계산하여 처리하는 방법도 있다.
+
+### 계획 변경
+
+- 코테에 자주 나오는 문제를 집중적으로 풀기 위해서 문제집 변경
+  - [바킹독 공개문제집](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog)
+
+### 1121
+
+- 카테고리: [BFS](https://www.acmicpc.net/workbook/view/7313)
+- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)의 [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+
+### 1128
+
+- 카테고리: [DP](https://www.acmicpc.net/workbook/view/7319)
+- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)
