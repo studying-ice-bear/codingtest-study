@@ -237,4 +237,17 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1205
 
 - 카테고리: [시뮬레이션](https://www.acmicpc.net/workbook/view/7316)
-- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)
+  - [감시](https://www.acmicpc.net/problem/15683)
+  - [테트로미노](https://www.acmicpc.net/problem/14500)
+    - 특정 범위 안에 모든 도형이 들어갈 수 있다는 규칙을 찾아야하고, ㅗ, ㅏ, ㅜ, ㅓ 모양인 경우 dfs 처리방법이 조금 다르다.
+  - [로봇 청소기](https://www.acmicpc.net/problem/14503)
+    - 규칙을 찾는 게 어려움: 방향을 꺾는 경우, 뒤로 가야하는 경우 
+  - [트럭](https://www.acmicpc.net/problem/13335)
+    - 덱을 이용해서 다리 역할을 한다.
+  
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)의 [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+
+### 1212
+
+- 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)
