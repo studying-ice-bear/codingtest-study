@@ -250,4 +250,15 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1212
 
 - 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
-- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)
+  - [동전 0](https://www.acmicpc.net/problem/11047)
+  - [공주님의 정원](https://www.acmicpc.net/problem/2457)
+    - 1월 1일을 101로 표현한 것이 도움이 되었다.
+    - [회의실배정](https://www.acmicpc.net/problem/1931)문제와 유사하다.
+  - [주식](https://www.acmicpc.net/problem/11501)
+    - 이 [글](https://www.acmicpc.net/board/view/16527)에 댓글이 도움이 되었다.
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [큰수만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+
+### 1219
+
+- 카테고리: [백트래킹](https://www.acmicpc.net/workbook/view/7315)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
