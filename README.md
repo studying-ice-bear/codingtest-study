@@ -221,4 +221,33 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1128
 
 - 카테고리: [DP](https://www.acmicpc.net/workbook/view/7319)
-- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)
+  - [퇴사](https://www.acmicpc.net/problem/14501)
+    - 뒤에서부터 일을 할 수 있는지 확인하면서 최댓값을 계산한다.
+  - [RGB 거리](https://www.acmicpc.net/problem/1149)
+    - 현재 위치에서 최소값을 구할 수 있게 위에 열에서 최솟값과 현재 값을 더해서 저장한다.
+  - [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
+    - 노가다로 규칙을 찾아서 해결(1일 때 결과값이 2일 때 결과값의 일부와 유사하다)
+  - [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
+    - 주어진 수열에서 부분수열 범위 안에서 나올 수 있는 부분수열을 구한다.
+  - [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+    - 프로세스 상태관리처럼 덱의 준비큐, 우선순위큐의 대기큐를 만들어서 관리한다. 현재 시간보다 이전에 요청된 것이면 대기큐에 넣고, 현재 요청된 것이면 바로 처리하고, 현재 시간보다 이후에 요청된 것이면 대기큐에 넣은 것들을 하나씩 빼서 처리한다.
+- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
+  - 트리의 루트 -> 리프 방법과 리프 -> 루트 방법 모두 존재한다. 다만 루트 -> 리프 방법이 인덱스 접근할 때 까다롭다.
+  
+### 1205
+
+- 카테고리: [시뮬레이션](https://www.acmicpc.net/workbook/view/7316)
+  - [감시](https://www.acmicpc.net/problem/15683)
+  - [테트로미노](https://www.acmicpc.net/problem/14500)
+    - 특정 범위 안에 모든 도형이 들어갈 수 있다는 규칙을 찾아야하고, ㅗ, ㅏ, ㅜ, ㅓ 모양인 경우 dfs 처리방법이 조금 다르다.
+  - [로봇 청소기](https://www.acmicpc.net/problem/14503)
+    - 규칙을 찾는 게 어려움: 방향을 꺾는 경우, 뒤로 가야하는 경우 
+  - [트럭](https://www.acmicpc.net/problem/13335)
+    - 덱을 이용해서 다리 역할을 한다.
+  
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)의 [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+
+### 1212
+
+- 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)
