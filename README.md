@@ -258,7 +258,14 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
     - 이 [글](https://www.acmicpc.net/board/view/16527)에 댓글이 도움이 되었다.
 - 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [큰수만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
 
-### 1219
+### 1221
 
 - 카테고리: [백트래킹](https://www.acmicpc.net/workbook/view/7315)
+  - [1182 부분수열의 합](https://www.acmicpc.net/problem/1182)
+  - [15657 N과 M(8)](https://www.acmicpc.net/problem/15657)
+  - [1759 암호만들기](https://www.acmicpc.net/problem/1759)
 - 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+
+### 1226
+
+- 랜덤문제: 
