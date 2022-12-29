@@ -268,4 +268,8 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 
 ### 1226
 
-- 랜덤문제: 
+- 랜덤문제
+  - [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+  - [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+    - 도형의 면과 모서리를 구분하기 위해서 1x1를 2x2로 생각하고 나타낸다.
+    - 다음주에 한 팀원(혜진)이 설명하기로!
