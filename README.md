@@ -2,10 +2,10 @@
 
 ## 목표
 
-- 매주 2개의 카테고리([백준 단계별로 풀기](https://www.acmicpc.net/step)) 안에서 문제 5개씩 풀기
+- 매주 2개의 카테고리([바킹독 공개문제집 (221114 변경)](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog) ~~[백준 단계별로 풀기(220808 - 221114)](https://www.acmicpc.net/step)~~) 안에서 문제 최소 5개씩 풀기
 - 매주 월요일 8시에 스터디 모임
-  1. 코드 공유 (약 30분)
-     - 모든 문제를 최대한 공유하도록 하되, 카테고리에 속한 문제가 지나치게 많은 경우 어려웠던 문제를 선정해서 공유함.
+  1. 코드 공유 (약 1시간)
+     - 무조건 1문제를 설명한다. 설명할 문제가 겹쳐도 무관하다.
   2. 랜덤으로 고른 문제 1개를 다같이 풀고, 푼 방법 공유 (약 30분)
      - [프로그래머스 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)에서 랜덤으로 결정함.
 
@@ -140,4 +140,136 @@
 ### 1017
 
 - 카테고리: [최단경로](https://www.acmicpc.net/step/26)
+  - 혜선님의 최단경로 풀이법: dfs, bfs 처럼 코드에 틀이 있어서, 다익스트라를 공부하면 문제를 풀 수 있습니다!    ~~노스트라다무스~~
 - 랜덤문제: [이분탐색](https://school.programmers.co.kr/learn/courses/30/parts/12486)의 [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
+  - 주어진 시간 동안 모든 심사관은 총 몇 명을 심사할 수 있는가를 확인하면서 시간 범위를 줄여나가는 것이 포인트. 
+  
+### 1024
+
+- 카테고리: [투포인터](https://www.acmicpc.net/step/59) + [최단경로](https://www.acmicpc.net/step/26)
+  - 투포인터의 [냅색문제](https://www.acmicpc.net/problem/1450)에서 비트 시프트 연산자 ([왼쪽 시프트](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift), [오른쪽 시프트](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift))
+  - 한 범위가 2개로 나뉘어 져서 각각의 부분합을 구함
+- 랜덤문제: [그래프](https://school.programmers.co.kr/learn/courses/30/parts/14393)의 [방의개수](https://school.programmers.co.kr/learn/courses/30/lessons/49190)
+  - 레벨5의 고난이도 문제 
+    - ![Screen Shot 2022-10-24 at 9 39 43 PM](https://user-images.githubusercontent.com/40953167/197527473-70fca604-768d-4cb9-87a1-30d8d90cbcfa.png)
+~~풀었으면 반4자2를 얻을 수 있었던 문제..~~
+  - 모래시계 같은 도형도 확인하기 위해서 ```dx,dy = [0,1,1,1,0,-1,-1,-1],[1,1,0,-1,-1,-1,0,1]```를 두번씩 더한다. 1x1를 2x2라고 생각하면 된다.
+
+### 1031
+
+- 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+  - 취업준비로 인해 문제를 많이 풀어오지 않아서 앞으로 진행방식을 변경함. 
+    > 각자 맡은 문제를 설명하고 다른 방식으로 푼 팀원이 첨언하기.
+  - 다음 주에 설명할 문제
+    - LCS 2 ➡️ 혜선 / 숨바꼭질 4 ➡️ 유진 / DSLR ➡️ 하영 / 최소비용 구하기 2 ➡️ 혜진 / 플로이드 2 ➡️ 보선
+- 랜덤문제: [해시](https://school.programmers.co.kr/learn/courses/30/parts/12077)의 [위장](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
+  - 대부분 수학의 조합 방식으로 풀었다
+  - 보선님이 알려준 꿀팁: Javascript의 Map을 iterable하게 접근하는 방법은 [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)를 사용하는 것이다.
+  - 혜선님이 알려준 꿀팁: 기본값을 생성해주는 딕셔너리 자료형 ```from collections import defaultdict```
+    - 관련 글 갈무리 ([출처: daleseo.com](https://www.daleseo.com/python-collections-defaultdict/#%EB%8D%94-%EB%82%98%EC%9D%80-%EB%B0%A9%EB%B2%95-collectionsdefaultdict))
+      > 파이썬의 내장 모듈인 collections의 defaultdict 클래스는 이러한 경우 사용하면 딱 인데요. defaultdict 클래스의 생성자로 기본값을 생성해주는 함수를 넘기면, 모든 키에 대해서 값이 없는 경우 자동으로 생성자의 인자로 넘어온 함수를 호출하여 그 결과값으로 설정해줍니다. 
+
+### 1107
+
+- 카테고리: [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+  - LCS2
+    - 2차원 배열에서 문자가 같으면 이전 값과 1을 더해서 저장한다. (가장자리에도 같은 방식으로 값을 넣기 위해서 패딩 값을 넣어준다.)
+    - 2차원 배열을 이용해서 역추적을 하여 부분 문자열을 출력한다. 
+    - [LCS 참고 블로그](
+https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-LCS-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Longest-Common-Substring%EC%99%80-Longest-Common-Subsequence)
+  - 숨바꼭질4
+    - bfs로 -1, 1, *2 인 상황을 모두 접근한다 (위치값을 같이 저장한다)
+  - DSLR
+    - 프로그래머스 조이스틱과 유사한 문제
+    - 방문 사실을 저장하면서 전체를 다 훑어본다.
+  - 최소비용 구하기 2
+    - [다익스트라](https://m.blog.naver.com/ndb796/221234424646) 이용
+      - 힙을 사용하면 시간복잡도가 작아진다.
+  - 플로이드 2
+    - 플로이드 워셜 알고리즘 이용 ([알고리즘 참고 블로그](https://m.blog.naver.com/PostView.naver?blogId=ndb796&logNo=221234427842))
+    - [문제 설명 때 참고한 그림](https://velog.io/@diddnjs02/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%B0%B1%EC%A4%80-%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C11404%EB%B2%88)
+    
+### 1114
+
+- 카테고리: [트리](https://www.acmicpc.net/step/23)
+  - 트리의 부모 찾기(11725)
+  - 트리의 지름(1967)
+    - 첫 노드에서 가장 멀리 떨어져있는 노드를 찾고, 그 노드에서 가장 멀리 떨어져 있는 노드의 거리를 찾으면 그게 트리의 지름이다.
+    - 증명이 어려워서 완벽히 이해하지 못했다.
+  - 트리 순회(1991)
+    - 재귀를 이용하여 전위순회, 중위순회, 후위순회
+  - 트리의 순회(2263)
+    - 후위순회의 마지막이 항상 루트 노드이고, 중위순회는 루트노드를 중심으로 왼쪽자식트리와 오른쪽자식트리를 구분지을 수 있다. 이때, 자식트리들의 개수를 알아내서 후위순회에서도 왼쪽자식트리의 범위를 구하고 오른쪽자식트리의 범위를 구한다. 각 자식트리의 루트를 구해서 중위순회에서 자식의 자식트리를 구한다. (반복)
+  - 이진 검색 트리(5639)
+    - 부모노드를 기점으로 왼쪽자식은 부모노드보다 작고, 오른쪽자식은 부모노드보다 크다는 특징을 유념하고 전위순회로 트리를 파악하여 후위순회 결과를 구한다.
+  - 트리(4803)
+    - 그래프의 모든 노드를 확인하여 트리가 만들어지는지(사이클이 없는지) 확인한다.
+- 랜덤문제: [스택/큐](https://school.programmers.co.kr/learn/courses/30/parts/12081)의 [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+  - 주먹구구 방식 대신에, 첫번째 프로그래스가 완료되려면 며칠이 지나야하는지 계산하면 더 빠르다.
+  - 모든 프로그레스가 필요한 날짜를 계산하여 처리하는 방법도 있다.
+
+### 계획 변경
+
+- 코테에 자주 나오는 문제를 집중적으로 풀기 위해서 문제집 변경
+  - [바킹독 공개문제집](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog)
+
+### 1121
+
+- 카테고리: [BFS](https://www.acmicpc.net/workbook/view/7313)
+- 랜덤문제: [힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)의 [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+
+### 1128
+
+- 카테고리: [DP](https://www.acmicpc.net/workbook/view/7319)
+  - [퇴사](https://www.acmicpc.net/problem/14501)
+    - 뒤에서부터 일을 할 수 있는지 확인하면서 최댓값을 계산한다.
+  - [RGB 거리](https://www.acmicpc.net/problem/1149)
+    - 현재 위치에서 최소값을 구할 수 있게 위에 열에서 최솟값과 현재 값을 더해서 저장한다.
+  - [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
+    - 노가다로 규칙을 찾아서 해결(1일 때 결과값이 2일 때 결과값의 일부와 유사하다)
+  - [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
+    - 주어진 수열에서 부분수열 범위 안에서 나올 수 있는 부분수열을 구한다.
+  - [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+    - 프로세스 상태관리처럼 덱의 준비큐, 우선순위큐의 대기큐를 만들어서 관리한다. 현재 시간보다 이전에 요청된 것이면 대기큐에 넣고, 현재 요청된 것이면 바로 처리하고, 현재 시간보다 이후에 요청된 것이면 대기큐에 넣은 것들을 하나씩 빼서 처리한다.
+- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
+  - 트리의 루트 -> 리프 방법과 리프 -> 루트 방법 모두 존재한다. 다만 루트 -> 리프 방법이 인덱스 접근할 때 까다롭다.
+  
+### 1205
+
+- 카테고리: [시뮬레이션](https://www.acmicpc.net/workbook/view/7316)
+  - [감시](https://www.acmicpc.net/problem/15683)
+  - [테트로미노](https://www.acmicpc.net/problem/14500)
+    - 특정 범위 안에 모든 도형이 들어갈 수 있다는 규칙을 찾아야하고, ㅗ, ㅏ, ㅜ, ㅓ 모양인 경우 dfs 처리방법이 조금 다르다.
+  - [로봇 청소기](https://www.acmicpc.net/problem/14503)
+    - 규칙을 찾는 게 어려움: 방향을 꺾는 경우, 뒤로 가야하는 경우 
+  - [트럭](https://www.acmicpc.net/problem/13335)
+    - 덱을 이용해서 다리 역할을 한다.
+  
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)의 [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+
+### 1212
+
+- 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
+  - [동전 0](https://www.acmicpc.net/problem/11047)
+  - [공주님의 정원](https://www.acmicpc.net/problem/2457)
+    - 1월 1일을 101로 표현한 것이 도움이 되었다.
+    - [회의실배정](https://www.acmicpc.net/problem/1931)문제와 유사하다.
+  - [주식](https://www.acmicpc.net/problem/11501)
+    - 이 [글](https://www.acmicpc.net/board/view/16527)에 댓글이 도움이 되었다.
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [큰수만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+
+### 1221
+
+- 카테고리: [백트래킹](https://www.acmicpc.net/workbook/view/7315)
+  - [1182 부분수열의 합](https://www.acmicpc.net/problem/1182)
+  - [15657 N과 M(8)](https://www.acmicpc.net/problem/15657)
+  - [1759 암호만들기](https://www.acmicpc.net/problem/1759)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+
+### 1226
+
+- 랜덤문제
+  - [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+  - [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+    - 도형의 면과 모서리를 구분하기 위해서 1x1를 2x2로 생각하고 나타낸다.
+    - 다음주에 한 팀원(혜진)이 설명하기로!

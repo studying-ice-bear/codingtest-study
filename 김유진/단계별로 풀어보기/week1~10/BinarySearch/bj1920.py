@@ -14,7 +14,7 @@ def binarySearch(target):
         if middle > len(arr)-1:
             break
         if target == arr[middle]:
-            answer =  1
+            answer = 1
             break
         elif target > arr[middle]:
             low = middle + 1
