@@ -273,3 +273,22 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
   - [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
     - 도형의 면과 모서리를 구분하기 위해서 1x1를 2x2로 생각하고 나타낸다.
     - 다음주에 한 팀원(혜진)이 설명하기로!
+    
+### 0102
+
+- 카테고리: [스택](https://www.acmicpc.net/workbook/view/7309)
+  - [1874 스택수열](https://www.acmicpc.net/problem/1874)
+  - [2493 탑](https://www.acmicpc.net/problem/2493)
+  - [6198 옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198)
+  - [17298 오큰수](https://www.acmicpc.net/problem/17298)
+- 랜덤문제: [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587)
+  - 중요도 확인할 때 유용한 코드
+    ```python
+    if any(cur[1] < q[1] for q in queue):
+            queue.append(cur)
+    ```
+    
+### 0109
+
+- 카테고리: [투포인터](https://www.acmicpc.net/workbook/view/8709)
+- 랜덤문제: [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
