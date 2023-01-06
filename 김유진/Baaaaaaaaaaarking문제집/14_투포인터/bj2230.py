@@ -1,28 +1,24 @@
-import sys
+import sys, math
 N, M = map(int, sys.stdin.readline().strip().split())
 arr = []
 for i in range(N):
     arr.append(int(sys.stdin.readline().strip()))
 
 arr.sort()
-left, right = 0, len(arr)-1
-can = []
+left, right = 0, 0
+can = math.inf
 
-while left < right:
+while left < N and right < N:
     diff = abs(arr[left]-arr[right])
-    print(left, right, diff)
+    # print(left, right, diff)
 
-    if diff > M:
-        can.append(diff)
-        right -= 1
-        left += 1
-    elif diff == M:
-        can.append(diff)
-        break
+    if diff < M:
+        right += 1
     else:
-        left -= 1
+        can = min(can, diff)
+        left += 1
 
-print(min(can))
+print(can)
 
 '''
 3 3
