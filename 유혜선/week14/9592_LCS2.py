@@ -1,3 +1,12 @@
+"""
+- LCS(Longest Common Subsequence)
+
+idea> 동적계획법?!
+- table[i][j] 를 비교할 때(a 문자열의 i번째, b 문자열의 j번째 글자 비교)
+- 글자가 같으면 해당 글자 전 문자열의 LCS 개수 + 1
+- 글자가 다르면 table[i-1][j], table[i][j-1] 중에 최댓값 
+(a 문자열의 i-1번째까지와 b 문자열의 j까지 비교, a 문자열의 i번째까지와 b 문자열의 j-1까지 비교)
+"""
 import sys
 input = sys.stdin.readline
 
