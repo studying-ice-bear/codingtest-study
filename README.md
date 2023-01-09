@@ -291,4 +291,18 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 0109
 
 - 카테고리: [투포인터](https://www.acmicpc.net/workbook/view/8709)
-- 랜덤문제: [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+  - [2230 수 고르기](https://www.acmicpc.net/problem/2230)
+  - [20922 겹치는 건 싫어](https://www.acmicpc.net/problem/20922)
+  - [2531 회전초밥](https://www.acmicpc.net/problem/2531)
+  - [13144 List of Unique Numbers](https://www.acmicpc.net/problem/13144)
+  - [1644 소수의 연속합](https://www.acmicpc.net/problem/1644)
+
+- 랜덤문제
+  - 스택의 [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+  - 완전탐색의 [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+  
+### 0116
+
+- 카테고리: [해시](https://www.acmicpc.net/workbook/view/9063)
+- 랜덤문제
+  - 해시의 [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
