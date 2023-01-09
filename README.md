@@ -250,4 +250,45 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1212
 
 - 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
-- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)
+  - [동전 0](https://www.acmicpc.net/problem/11047)
+  - [공주님의 정원](https://www.acmicpc.net/problem/2457)
+    - 1월 1일을 101로 표현한 것이 도움이 되었다.
+    - [회의실배정](https://www.acmicpc.net/problem/1931)문제와 유사하다.
+  - [주식](https://www.acmicpc.net/problem/11501)
+    - 이 [글](https://www.acmicpc.net/board/view/16527)에 댓글이 도움이 되었다.
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [큰수만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+
+### 1221
+
+- 카테고리: [백트래킹](https://www.acmicpc.net/workbook/view/7315)
+  - [1182 부분수열의 합](https://www.acmicpc.net/problem/1182)
+  - [15657 N과 M(8)](https://www.acmicpc.net/problem/15657)
+  - [1759 암호만들기](https://www.acmicpc.net/problem/1759)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+
+### 1226
+
+- 랜덤문제
+  - [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+  - [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+    - 도형의 면과 모서리를 구분하기 위해서 1x1를 2x2로 생각하고 나타낸다.
+    - 다음주에 한 팀원(혜진)이 설명하기로!
+    
+### 0102
+
+- 카테고리: [스택](https://www.acmicpc.net/workbook/view/7309)
+  - [1874 스택수열](https://www.acmicpc.net/problem/1874)
+  - [2493 탑](https://www.acmicpc.net/problem/2493)
+  - [6198 옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198)
+  - [17298 오큰수](https://www.acmicpc.net/problem/17298)
+- 랜덤문제: [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587)
+  - 중요도 확인할 때 유용한 코드
+    ```python
+    if any(cur[1] < q[1] for q in queue):
+            queue.append(cur)
+    ```
+    
+### 0109
+
+- 카테고리: [투포인터](https://www.acmicpc.net/workbook/view/8709)
+- 랜덤문제: [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
