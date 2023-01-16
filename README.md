@@ -322,5 +322,16 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 0116
 
 - 카테고리: [해시](https://www.acmicpc.net/workbook/view/9063)
+  - [1620 나는야 포켓몬 마스터 이다솜](https://www.acmicpc.net/problem/1620)
+  - [13414 수강신청](https://www.acmicpc.net/problem/13414)
+  - [9375 패션왕 신해빈](https://www.acmicpc.net/problem/9375)
+  - [7785 회사에 있는 사람](https://www.acmicpc.net/problem/7785)
+  - [11478 서로 다른 부분 문자열의 개수](https://www.acmicpc.net/problem/11478)
 - 랜덤문제
   - 해시의 [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
+
+### 0123
+
+- 카테고리: [이분탐색](https://www.acmicpc.net/workbook/view/8400)
+- 랜덤문제
+  - 이분탐색의 [멀티버스2](https://www.acmicpc.net/problem/18869)
