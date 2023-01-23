@@ -333,5 +333,15 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 0123
 
 - 카테고리: [이분탐색](https://www.acmicpc.net/workbook/view/8400)
+  - [2295 세수의 합](https://www.acmicpc.net/problem/2295)
+  - [1654 랜선자르기](https://www.acmicpc.net/problem/1654)
+  - [1920 수 찾기](https://www.acmicpc.net/problem/1920)
 - 랜덤문제
   - 이분탐색의 [멀티버스2](https://www.acmicpc.net/problem/18869)
+    - [18870 좌표압축](https://www.acmicpc.net/problem/18870)문제를 이용해서 풀면 쉽다.
+
+### 0130
+
+- 카테고리: [덱](https://www.acmicpc.net/workbook/view/7311)
+- 랜덤문제
+  - [파티](https://www.acmicpc.net/problem/1238)
