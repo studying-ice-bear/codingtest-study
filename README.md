@@ -291,4 +291,47 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 0109
 
 - 카테고리: [투포인터](https://www.acmicpc.net/workbook/view/8709)
-- 랜덤문제: [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+  - [2230 수 고르기](https://www.acmicpc.net/problem/2230)
+  - [20922 겹치는 건 싫어](https://www.acmicpc.net/problem/20922)
+  - [2531 회전초밥](https://www.acmicpc.net/problem/2531)
+  - [13144 List of Unique Numbers](https://www.acmicpc.net/problem/13144)
+  - [1644 소수의 연속합](https://www.acmicpc.net/problem/1644)
+
+- 랜덤문제
+  - 스택의 [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+  - 완전탐색의 [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+    - 굉장히 파이써닉한 코드🐍
+      ```solution = lambda k, d: max([solution(k - u, d[:i] + d[i+1:]) + 1 for i, (m, u) in enumerate(d) if k >= m] or [0])```
+    - dfs로도 풀 수 있었음
+      ```js
+      function solution(k, dungeons) {
+          let result = -1;
+          const dfs = (k, dungeons, depth) => {
+              for (let i = 0; i < dungeons.length; i++) {
+                  const [min, use] = dungeons[i]
+                  if (!min || k < min) continue;
+                  dfs(k - use, dungeons.map((v, index) => index === i ? [null, null] : v), depth + 1)
+              }
+              return (result = Math.max(depth, result))
+          }
+          dfs(k, dungeons, 0)
+          return result;
+      }
+      ```
+  
+### 0116
+
+- 카테고리: [해시](https://www.acmicpc.net/workbook/view/9063)
+  - [1620 나는야 포켓몬 마스터 이다솜](https://www.acmicpc.net/problem/1620)
+  - [13414 수강신청](https://www.acmicpc.net/problem/13414)
+  - [9375 패션왕 신해빈](https://www.acmicpc.net/problem/9375)
+  - [7785 회사에 있는 사람](https://www.acmicpc.net/problem/7785)
+  - [11478 서로 다른 부분 문자열의 개수](https://www.acmicpc.net/problem/11478)
+- 랜덤문제
+  - 해시의 [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
+
+### 0123
+
+- 카테고리: [이분탐색](https://www.acmicpc.net/workbook/view/8400)
+- 랜덤문제
+  - 이분탐색의 [멀티버스2](https://www.acmicpc.net/problem/18869)
