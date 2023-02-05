@@ -221,4 +221,127 @@ https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%
 ### 1128
 
 - 카테고리: [DP](https://www.acmicpc.net/workbook/view/7319)
-- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)
+  - [퇴사](https://www.acmicpc.net/problem/14501)
+    - 뒤에서부터 일을 할 수 있는지 확인하면서 최댓값을 계산한다.
+  - [RGB 거리](https://www.acmicpc.net/problem/1149)
+    - 현재 위치에서 최소값을 구할 수 있게 위에 열에서 최솟값과 현재 값을 더해서 저장한다.
+  - [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
+    - 노가다로 규칙을 찾아서 해결(1일 때 결과값이 2일 때 결과값의 일부와 유사하다)
+  - [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
+    - 주어진 수열에서 부분수열 범위 안에서 나올 수 있는 부분수열을 구한다.
+  - [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
+    - 프로세스 상태관리처럼 덱의 준비큐, 우선순위큐의 대기큐를 만들어서 관리한다. 현재 시간보다 이전에 요청된 것이면 대기큐에 넣고, 현재 요청된 것이면 바로 처리하고, 현재 시간보다 이후에 요청된 것이면 대기큐에 넣은 것들을 하나씩 빼서 처리한다.
+- 랜덤문제: [DP](https://school.programmers.co.kr/learn/courses/30/parts/12263)의 [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
+  - 트리의 루트 -> 리프 방법과 리프 -> 루트 방법 모두 존재한다. 다만 루트 -> 리프 방법이 인덱스 접근할 때 까다롭다.
+  
+### 1205
+
+- 카테고리: [시뮬레이션](https://www.acmicpc.net/workbook/view/7316)
+  - [감시](https://www.acmicpc.net/problem/15683)
+  - [테트로미노](https://www.acmicpc.net/problem/14500)
+    - 특정 범위 안에 모든 도형이 들어갈 수 있다는 규칙을 찾아야하고, ㅗ, ㅏ, ㅜ, ㅓ 모양인 경우 dfs 처리방법이 조금 다르다.
+  - [로봇 청소기](https://www.acmicpc.net/problem/14503)
+    - 규칙을 찾는 게 어려움: 방향을 꺾는 경우, 뒤로 가야하는 경우 
+  - [트럭](https://www.acmicpc.net/problem/13335)
+    - 덱을 이용해서 다리 역할을 한다.
+  
+- 랜덤문제: [정렬](https://school.programmers.co.kr/learn/courses/30/parts/12198)의 [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+
+### 1212
+
+- 카테고리: [그리디](https://www.acmicpc.net/workbook/view/7320)
+  - [동전 0](https://www.acmicpc.net/problem/11047)
+  - [공주님의 정원](https://www.acmicpc.net/problem/2457)
+    - 1월 1일을 101로 표현한 것이 도움이 되었다.
+    - [회의실배정](https://www.acmicpc.net/problem/1931)문제와 유사하다.
+  - [주식](https://www.acmicpc.net/problem/11501)
+    - 이 [글](https://www.acmicpc.net/board/view/16527)에 댓글이 도움이 되었다.
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [큰수만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+
+### 1221
+
+- 카테고리: [백트래킹](https://www.acmicpc.net/workbook/view/7315)
+  - [1182 부분수열의 합](https://www.acmicpc.net/problem/1182)
+  - [15657 N과 M(8)](https://www.acmicpc.net/problem/15657)
+  - [1759 암호만들기](https://www.acmicpc.net/problem/1759)
+- 랜덤문제: [탐욕법](https://school.programmers.co.kr/learn/courses/30/parts/12244)의 [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+
+### 1226
+
+- 랜덤문제
+  - [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+  - [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+    - 도형의 면과 모서리를 구분하기 위해서 1x1를 2x2로 생각하고 나타낸다.
+    - 다음주에 한 팀원(혜진)이 설명하기로!
+    
+### 0102
+
+- 카테고리: [스택](https://www.acmicpc.net/workbook/view/7309)
+  - [1874 스택수열](https://www.acmicpc.net/problem/1874)
+  - [2493 탑](https://www.acmicpc.net/problem/2493)
+  - [6198 옥상 정원 꾸미기](https://www.acmicpc.net/problem/6198)
+  - [17298 오큰수](https://www.acmicpc.net/problem/17298)
+- 랜덤문제: [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587)
+  - 중요도 확인할 때 유용한 코드
+    ```python
+    if any(cur[1] < q[1] for q in queue):
+            queue.append(cur)
+    ```
+    
+### 0109
+
+- 카테고리: [투포인터](https://www.acmicpc.net/workbook/view/8709)
+  - [2230 수 고르기](https://www.acmicpc.net/problem/2230)
+  - [20922 겹치는 건 싫어](https://www.acmicpc.net/problem/20922)
+  - [2531 회전초밥](https://www.acmicpc.net/problem/2531)
+  - [13144 List of Unique Numbers](https://www.acmicpc.net/problem/13144)
+  - [1644 소수의 연속합](https://www.acmicpc.net/problem/1644)
+
+- 랜덤문제
+  - 스택의 [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
+  - 완전탐색의 [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+    - 굉장히 파이써닉한 코드🐍
+      ```solution = lambda k, d: max([solution(k - u, d[:i] + d[i+1:]) + 1 for i, (m, u) in enumerate(d) if k >= m] or [0])```
+    - dfs로도 풀 수 있었음
+      ```js
+      function solution(k, dungeons) {
+          let result = -1;
+          const dfs = (k, dungeons, depth) => {
+              for (let i = 0; i < dungeons.length; i++) {
+                  const [min, use] = dungeons[i]
+                  if (!min || k < min) continue;
+                  dfs(k - use, dungeons.map((v, index) => index === i ? [null, null] : v), depth + 1)
+              }
+              return (result = Math.max(depth, result))
+          }
+          dfs(k, dungeons, 0)
+          return result;
+      }
+      ```
+  
+### 0116
+
+- 카테고리: [해시](https://www.acmicpc.net/workbook/view/9063)
+  - [1620 나는야 포켓몬 마스터 이다솜](https://www.acmicpc.net/problem/1620)
+  - [13414 수강신청](https://www.acmicpc.net/problem/13414)
+  - [9375 패션왕 신해빈](https://www.acmicpc.net/problem/9375)
+  - [7785 회사에 있는 사람](https://www.acmicpc.net/problem/7785)
+  - [11478 서로 다른 부분 문자열의 개수](https://www.acmicpc.net/problem/11478)
+- 랜덤문제
+  - 해시의 [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
+
+### 0123
+
+- 카테고리: [이분탐색](https://www.acmicpc.net/workbook/view/8400)
+  - [2295 세수의 합](https://www.acmicpc.net/problem/2295)
+  - [1654 랜선자르기](https://www.acmicpc.net/problem/1654)
+  - [1920 수 찾기](https://www.acmicpc.net/problem/1920)
+- 랜덤문제
+  - 이분탐색의 [멀티버스2](https://www.acmicpc.net/problem/18869)
+    - [18870 좌표압축](https://www.acmicpc.net/problem/18870)문제를 이용해서 풀면 쉽다.
+
+### 0130
+
+- 카테고리: [덱](https://www.acmicpc.net/workbook/view/7311)
+- 랜덤문제
+  - [파티](https://www.acmicpc.net/problem/1238)
