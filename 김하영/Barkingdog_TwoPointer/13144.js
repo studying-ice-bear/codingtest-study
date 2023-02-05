@@ -34,7 +34,6 @@ const solution = (inputArr) => {
   let set = new Set();
 
   while (first < inputArr.length) {
-    console.log(set);
     if (!set.has(inputArr[first]) && last < inputArr.length) {
       set.add(inputArr[first]);
       first++;
