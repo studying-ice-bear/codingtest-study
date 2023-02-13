@@ -27,13 +27,39 @@ output:
 '''
 
 import sys
+from itertools import permutations
 
 N = int(sys.stdin.readline())
 numbers = list(map(int, sys.stdin.readline().split()))
-op = list(map(int, sys.stdin.readline().split()))
+op_num = list(map(int, sys.stdin.readline().split()))
+op_list = ['+', '-', '*', '/']
+op = []
 
 maximum = -1e9
 minimum = 1e9
+
+for k in range(4):
+    for i in range(op_num[k]):
+        op.append(op_list[k])
+
+def solve():
+    global maximum, minimum
+    for case in permutations(op, N-1):
+        total = numbers[0]
+        for r in range(1, N):
+            if case[r-1] == '+':
+                total += numbers[r]
+            elif case[r-1] == '-':
+                total -= numbers[r]
+            elif case[r-1] == '*':
+                total *= numbers[r]
+            elif case[r-1] == '/':
+                total = int(total / numbers[r])
+
+        if total > maximum:
+            maximum = total
+        if total < minimum:
+            minimum = total
 
 def dfs(depth, total, plus, minus, multiply, divide):
     global maximum, minimum
@@ -51,6 +77,7 @@ def dfs(depth, total, plus, minus, multiply, divide):
     if divide:
         dfs(depth+1, int(total/numbers[depth]), plus, minus, multiply, divide-1)
 
-dfs(1, numbers[0], op[0], op[1], op[2], op[3])
+# dfs(1, numbers[0], op[0], op[1], op[2], op[3])
+solve()
 print(maximum)
 print(minimum)
