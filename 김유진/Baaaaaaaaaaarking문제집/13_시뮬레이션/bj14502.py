@@ -5,6 +5,7 @@ import copy
 def bfs():
     queue = deque()
     tmp = copy.deepcopy(graph)
+    # 리스트안의 리스트는 deepcopy를 활용해야 한다! 참고하면 좋을 링크: https://wikidocs.net/16038
     for i in range(N):
         for j in range(M):
             if tmp[i][j] == 2:
