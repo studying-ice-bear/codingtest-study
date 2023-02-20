@@ -44,7 +44,6 @@ while True:
         break
 
     if board[x][y] == 2:
-        board[x][y] == 1
         snake.append((x, y))
         if time in change:
             turn(change[time])
