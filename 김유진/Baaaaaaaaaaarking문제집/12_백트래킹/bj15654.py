@@ -19,7 +19,7 @@ def func(k):
             func(k+1)
             isused[i] = False
 
-func(0);
+func(0)
 
 '''
 import sys
