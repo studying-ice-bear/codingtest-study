@@ -1,54 +1,45 @@
 import sys
 H, W = map(int, sys.stdin.readline().split())
-building = list(map(int, sys.stdin.readline().split()))
-building = building[::-1]
-print(building)
+rain = list(map(int, sys.stdin.readline().split()))
+buildings = [[0 for _ in range(W)] for _ in range(H)]
 
-rain = 0
-tall = building[0]
+for i, r in zip(range(W), rain):
+    for j in range(r):
+        buildings[j][i] = 1
 
-for i in range(1, W):
-    if building[i] < tall:
-        rain += tall - building[i]
-    else:
-        tall = 0
+answer = 0
 
-print(rain)
+for i in range(H):
+    l, r = 0, 1
+    while l <= r and r < W:
+        if buildings[i][l] and buildings[i][r]:
+            answer += r - l - 1
+            l = r
+            r += 1
+        elif buildings[i][l] and not buildings[i][r]:
+            r += 1
+        elif not buildings[i][l] and buildings[i][r]:
+            l = r
+            r += 1
+        else:
+            l += 1
+            r += 1
 
-# rain = 0
-# tall = 0
-# stack = []
-# arr = []
-#
-# tall = building[0]
-# for i in range(1, W):
-#     if building[i] < tall:
-#         arr.append(tall-building[i])
-#         rain += tall - building[i]
-#     else:
-#         tall = max(tall, building[i])
-#
-# for i in range(W):
-#     if not stack:
-#         stack.append(building[i])
-#     else:
-#         if stack[-1] > building[i]:
-#             stack.append(building[i])
-#         elif max(stack) == building[i]:
-#             for h in stack:
-#                 rain += max(stack) - h
-#             stack = []
-#
-# print(rain)
+print(answer)
 
 '''
-for i in range(W-1):
-    if building[i] > building[i+1]:
-        rain[i] = building[i] - building[i+1]
-        tall = max(tall, building[i])
-    else:
-        if tall > building[i+1]:
-            rain[i] = tall - building[i+1]
-        else:
-            tall = max(tall, building[i+1])
+4 4
+3 0 1 4
+
+[1, 0, 1, 1]
+[1, 0, 0, 1]
+[1, 0, 0, 1]
+[0, 0, 0, 1]
+
+4 8
+3 1 2 3 4 1 1 2
+[1, 1, 1, 1, 1, 1, 1, 1]
+[1, 0, 1, 1, 1, 0, 0, 1]
+[1, 0, 0, 1, 1, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0]
 '''
