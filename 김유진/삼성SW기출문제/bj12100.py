@@ -5,6 +5,78 @@ graph = []
 for _ in range(N):
     graph.append(list(map(int, sys.stdin.readline().split())))
 
+def left(graph):
+    for i in range(N):
+        top = 0
+        for j in range(1, N):
+            if graph[i][j]:
+                tmp = graph[i][j]
+                graph[i][j] = 0
+
+                if graph[i][top] == 0:
+                    graph[i][top] = tmp
+                elif graph[i][top] == tmp:
+                    graph[i][top] = tmp * 2
+                    top += 1
+                else:
+                    top += 1
+                    graph[i][top] = tmp
+
+    return graph
+
+def right(graph):
+    for i in range(N):
+            top = N-1
+            for j in range(N-2, -1, -1):
+                if graph[i][j]:
+                    tmp = graph[i][j]
+                    graph[i][j] = 0
+
+                    if graph[i][top] == 0:
+                        graph[i][top] = tmp
+                    elif graph[i][top] == tmp:
+                        graph[i][top] = tmp * 2
+                        top -= 1
+                    else:
+                        top -= 1
+                        graph[i][top] = tmp
+    return graph
+
+def up(graph):
+    for j in range(N):
+        top = 0
+        for i in range(1, N):
+            if graph[i][j]:
+                tmp = graph[i][j]
+                graph[i][j] = 0
+                if graph[top][j] == 0:
+                    graph[top][j] = tmp
+                elif graph[top][j] == tmp:
+                    graph[top][j] = tmp * 2
+                    top += 1
+                else:
+                    top += 1
+                    graph[top][j] = tmp
+    return graph
+
+def down(graph):
+    for j in range(N):
+        top = N - 1
+        for i in range(N - 2, -1, -1):
+            if graph[i][j]:
+                tmp = graph[i][j]
+                graph[i][j] = 0
+
+                if graph[top][j] == 0:
+                    graph[top][j] = tmp
+                elif graph[top][j] == tmp:
+                    graph[top][j] = tmp * 2
+                    top -= 1
+                else:
+                    top -= 1
+                    graph[top][j] = tmp
+    return graph
+
 def move(graph, dir):
     if dir == 0:
         for i in range(N):
@@ -81,9 +153,15 @@ def dfs(graph, cnt):
                 answer = max(answer, graph[i][j])
         return
 
-    for i in range(4):
-        tmp_graph = move(copy.deepcopy(graph), i)
-        dfs(tmp_graph, cnt+1)
+    # deepcopy 주의!
+    dfs(left(copy.deepcopy(graph)), cnt+1)
+    dfs(right(copy.deepcopy(graph)), cnt + 1)
+    dfs(up(copy.deepcopy(graph)), cnt + 1)
+    dfs(down(copy.deepcopy(graph)), cnt + 1)
+
+    # for i in range(4):
+    #     tmp_graph = move(copy.deepcopy(graph), i)
+    #     dfs(tmp_graph, cnt+1)
 
 answer = 0
 dfs(graph, 0)
