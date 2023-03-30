@@ -1,35 +1,63 @@
-import sys
+import sys, heapq
+INF = int(1e9)
 
 N, D = map(int, sys.stdin.readline().split())
+graph = [[] for _ in range(D+1)]
+distance = [INF] * (D+1)
 
-short = {}
+def dijkstra(start):
+    q = []
+    heapq.heappush(q, (0, start))
+    print(q)
+    distance[start] = 0
+    while q:
+        dist, now = heapq.heappop(q)
+        print(dist, now)
+        print(q)
+        if dist > distance[now]:
+            continue
+
+        for i in graph[now]:
+            cost = dist + i[1]
+            if cost < distance[i[0]]:
+                distance[i[0]] = cost
+                heapq.heappush(q, (cost, i[0]))
+
+for i in range(D):
+    graph[i].append((i+1, 1))
+
 for _ in range(N):
     start, end, length = map(int, sys.stdin.readline().split())
-    if (start, end) in short.keys():
-        short[(start, end)] = min(short[(start, end)], length)
+    if end > D:
+        continue
+    graph[start].append((end, length))
+
+dijkstra(0)
+print(distance[D])
+
+'''
+highway = [i for i in range(D+1)]
+shortcut = []
+
+for _ in range(N):
+    shortcut.append(list(map(int, sys.stdin.readline().split())))
+
+for i in range(N):
+    start, end, length = shortcut[i]
+    if start == 0:
+        highway[end] = min(highway[end], length)
+    elif end > D:
+        continue
     else:
-        short[(start, end)] = length
+        highway[end] = min(highway[end], highway[start]+length)
+        print(end, highway[end])
 
-print(short)
+        for j in range(end+1, D):
+            highway[j] = highway[j-1]+1
+        print(highway)
 
-curr_s, curr_e = 0, 0
-total = 0
-
-for s, e in short.keys():
-    print(s, e)
-    if curr_s <= s:
-        total += s-curr_s+short[(s, e)]
-        # D = D-(e-s) + short[(s, e)]
-        curr_s = s
-        curr_e = e
-    elif s < curr_e <= e:
-        total -= s-curr_s+short[(s, e)]
-        tmp = curr_e - curr_s - short[(curr_s, curr_e)]
-        total += min(tmp, short[(s, e)])
-    else:
-        total += s - curr_s + short[(s, e)]
-
-print(total)
+print(highway[D])
+'''
 
 '''
 3 20
