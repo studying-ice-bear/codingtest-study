@@ -7,28 +7,6 @@ graph = []
 for _ in range(N):
     graph.append(list(map(int, sys.stdin.readline().split())))
 
-dx = [0, 0, -1, 1]
-dy = [-1, 1, 0, 0]
-
-visited = [[False]*N for _ in range(N)]
-
-'''
-def dfs(x, y, change, cnt):
-    visited[x][y] = True
-    change.append((x, y))
-
-    for i in range(4):
-        xx = x + dx[i]
-        yy = y + dy[i]
-
-        if 0 <= xx < N and 0 <= yy < N:
-            if L <= abs(graph[x][y] - graph[xx][yy]) <= R and not visited[xx][yy]:
-                visited[xx][yy] = True
-                dfs(xx, yy, change, cnt+1)
-                visited[xx][yy] = False
-
-
-opened = [[False] * N for _ in range(N)]
 
 def bfs(start):
     que = deque([start])
@@ -36,7 +14,8 @@ def bfs(start):
 
     visited[x][y] = True
 
-    change = deque([start])
+    union = deque()
+    union.append(start)
 
     while que:
         nx, ny = que.popleft()
@@ -45,50 +24,54 @@ def bfs(start):
             xx = nx + dx[i]
             yy = ny + dy[i]
 
-            if 0 <= xx < N and 0 <= yy < N:
-                if L <= abs(graph[x][y] - graph[xx][yy]) <= R:
+            if 0 <= xx < N and 0 <= yy < N and not visited[xx][yy]:
+                if L <= abs(graph[nx][ny] - graph[xx][yy]) <= R:
                     que.append((xx, yy))
-                    change.append((xx, yy))
-                    visited[x][y] = True
-                    for i in range(4):
-                        xxx = xx + dx[i]
-                        yyy = yy + dy[i]
-                        if 0 <= xxx < N and 0 <= yyy < N:
-                            if (xxx, yyy) not in change:
-                                visited[xxx][yyy] = True
-                                change.append((xxx, yyy))
-    n = len(change)
+                    visited[xx][yy] = True
+                    union.append((xx, yy))
+
+    return len(union)
+
+day = 0
+
+while True:
+    visited = [[False] * N for _ in range(N)]
+    dx = [0, 0, -1, 1]
+    dy = [-1, 1, 0, 0]
+
+    move = False
+    for i in range(N):
+        for j in range(N):
+            if not visited[i][j]:
+                if bfs((i, j)) > 1:
+                    move = True
+
+    if not move:
+        break
+
     total = 0
-    for i in range(n):
-        cx, cy = change[i][0], change[i][1]
-        total += graph[cx][cy]
-        print(total)
-    # print(change)
-    while change:
-        cx, cy = change.popleft()
-        graph[cx][cy] = total//n
-        # print(round(total/n))
+    n = 0
+    for i in range(N):
+        for j in range(N):
+            if visited[i][j]:
+                total += graph[i][j]
+                n += 1
 
+    day += 1
 
-# bfs((0, 0))
+    for i in range(N):
+        for j in range(N):
+            if visited[i][j]:
+                graph[i][j] = total // n
 
-def getResult(graph, c):
-    total = 0
-    n = len(c)
-    for i in range(n):
-        x, y = c[i][0], c[i][1]
-        total += graph[x][y]
+    # print(*graph, sep='\n')
 
-    while c:
-        x, y = c.popleft()
-        graph[x][y] = total // n
+print(day)
 
-bfs((0, 0))
-'''
 # change = deque()
 # dfs(0, 0, change)
 # getResult(graph, change)
-# print(*graph, sep='\n')
+
 
 # day = 0
 # while True:
@@ -118,4 +101,10 @@ bfs((0, 0))
 0 10 10 10 30
 30 40 50 20 10
 0 20 10 10 10
+
+3 20 50
+35 35 15
+35 35 0
+5 30 0
+
 '''
