@@ -1,3 +1,4 @@
+import math
 import sys
 from collections import deque
 
@@ -9,13 +10,17 @@ for _ in range(N):
 
 
 def bfs(start):
-    que = deque([start])
-    x, y = start[0], start[1]
+    que = deque()
+    que.append(start)
 
+    x, y = start[0], start[1]
     visited[x][y] = True
 
     union = deque()
     union.append(start)
+
+    # 연합 국가의 총 인구 수
+    total = graph[x][y]
 
     while que:
         nx, ny = que.popleft()
@@ -24,11 +29,20 @@ def bfs(start):
             xx = nx + dx[i]
             yy = ny + dy[i]
 
-            if 0 <= xx < N and 0 <= yy < N and not visited[xx][yy]:
-                if L <= abs(graph[nx][ny] - graph[xx][yy]) <= R:
-                    que.append((xx, yy))
-                    visited[xx][yy] = True
-                    union.append((xx, yy))
+            if xx < 0 or xx >= N or yy < 0 or yy >= N:
+                continue
+
+            if visited[xx][yy]:
+                continue
+
+            if L <= abs(graph[nx][ny] - graph[xx][yy]) <= R:
+                que.append((xx, yy))
+                visited[xx][yy] = True
+                union.append((xx, yy))
+                total += graph[xx][yy]
+
+    for x, y in union:
+        graph[x][y] = math.floor(total / len(union))
 
     return len(union)
 
@@ -49,49 +63,25 @@ while True:
     if not move:
         break
 
-    total = 0
-    n = 0
-    for i in range(N):
-        for j in range(N):
-            if visited[i][j]:
-                total += graph[i][j]
-                n += 1
-
     day += 1
 
-    for i in range(N):
-        for j in range(N):
-            if visited[i][j]:
-                graph[i][j] = total // n
+    # total = 0
+    # n = 0
+    # for i in range(N):
+    #     for j in range(N):
+    #         if visited[i][j]:
+    #             total += graph[i][j]
+    #             n += 1
+    #
+    # for i in range(N):
+    #     for j in range(N):
+    #         if visited[i][j]:
+    #             graph[i][j] = total // n
 
     # print(*graph, sep='\n')
 
 print(day)
 
-# change = deque()
-# dfs(0, 0, change)
-# getResult(graph, change)
-
-
-# day = 0
-# while True:
-#     day += 1
-#     change = deque()
-#     dfs(0, 0, change)
-#     getResult(graph, change)
-#     print(*graph, sep='\n')
-#
-#     check = True
-#
-#     for i in range(N):
-#         for j in range(N):
-#             if visited[i][j]:
-#                 check = False
-#
-#     if check:
-#         break
-#
-# print(day)
 
 
 '''
