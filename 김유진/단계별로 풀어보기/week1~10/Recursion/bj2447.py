@@ -1,9 +1,20 @@
+import sys
+
 def star(N):
-    if N == 3:
+    if N == 0:
         print("***")
         print("* *")
         print("***")
-    elif N > 3:
-        star(N-3)
+        return
 
-star(3)
+    elif N > 3:
+        print("*" * N/3)
+        print("*" * (N/3)//2)
+        print("*" * N/3)
+
+
+N = int(sys.stdin.readline())
+
+print("*" * (N//3))
+print("*" * ((N/3)//2))
+print("*" * (N//3))
